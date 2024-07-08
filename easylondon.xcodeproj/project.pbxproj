@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		676D6EA12C3C7E6400BF1BD2 /* easylondonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */; };
+		676D6EA32C3C7E6400BF1BD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */; };
+		676D6EA52C3C7E6500BF1BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D6EA42C3C7E6500BF1BD2 /* Assets.xcassets */; };
+		676D6EA82C3C7E6500BF1BD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D6EA72C3C7E6500BF1BD2 /* Preview Assets.xcassets */; };
+		676D6EB22C3C7E6600BF1BD2 /* easylondonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EB12C3C7E6600BF1BD2 /* easylondonTests.swift */; };
+		676D6EBC2C3C7E6600BF1BD2 /* easylondonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EBB2C3C7E6600BF1BD2 /* easylondonUITests.swift */; };
+		676D6EBE2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EBD2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		676D6EAE2C3C7E6600BF1BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676D6E952C3C7E6400BF1BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676D6E9C2C3C7E6400BF1BD2;
+			remoteInfo = easylondon;
+		};
+		676D6EB82C3C7E6600BF1BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676D6E952C3C7E6400BF1BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676D6E9C2C3C7E6400BF1BD2;
+			remoteInfo = easylondon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		676D6E9D2C3C7E6400BF1BD2 /* easylondon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easylondon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonApp.swift; sourceTree = "<group>"; };
+		676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		676D6EA42C3C7E6500BF1BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		676D6EA72C3C7E6500BF1BD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		676D6EAD2C3C7E6600BF1BD2 /* easylondonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = easylondonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		676D6EB12C3C7E6600BF1BD2 /* easylondonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonTests.swift; sourceTree = "<group>"; };
+		676D6EB72C3C7E6600BF1BD2 /* easylondonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = easylondonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		676D6EBB2C3C7E6600BF1BD2 /* easylondonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonUITests.swift; sourceTree = "<group>"; };
+		676D6EBD2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		676D6E9A2C3C7E6400BF1BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676D6EAA2C3C7E6600BF1BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676D6EB42C3C7E6600BF1BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676D6E942C3C7E6400BF1BD2 = {
+			isa = PBXGroup;
+			children = (
+				676D6E9F2C3C7E6400BF1BD2 /* easylondon */,
+				676D6EB02C3C7E6600BF1BD2 /* easylondonTests */,
+				676D6EBA2C3C7E6600BF1BD2 /* easylondonUITests */,
+				676D6E9E2C3C7E6400BF1BD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		676D6E9E2C3C7E6400BF1BD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676D6E9D2C3C7E6400BF1BD2 /* easylondon.app */,
+				676D6EAD2C3C7E6600BF1BD2 /* easylondonTests.xctest */,
+				676D6EB72C3C7E6600BF1BD2 /* easylondonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676D6E9F2C3C7E6400BF1BD2 /* easylondon */ = {
+			isa = PBXGroup;
+			children = (
+				676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */,
+				676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */,
+				676D6EA42C3C7E6500BF1BD2 /* Assets.xcassets */,
+				676D6EA62C3C7E6500BF1BD2 /* Preview Content */,
+			);
+			path = easylondon;
+			sourceTree = "<group>";
+		};
+		676D6EA62C3C7E6500BF1BD2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				676D6EA72C3C7E6500BF1BD2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		676D6EB02C3C7E6600BF1BD2 /* easylondonTests */ = {
+			isa = PBXGroup;
+			children = (
+				676D6EB12C3C7E6600BF1BD2 /* easylondonTests.swift */,
+			);
+			path = easylondonTests;
+			sourceTree = "<group>";
+		};
+		676D6EBA2C3C7E6600BF1BD2 /* easylondonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				676D6EBB2C3C7E6600BF1BD2 /* easylondonUITests.swift */,
+				676D6EBD2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift */,
+			);
+			path = easylondonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		676D6E9C2C3C7E6400BF1BD2 /* easylondon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676D6EC12C3C7E6600BF1BD2 /* Build configuration list for PBXNativeTarget "easylondon" */;
+			buildPhases = (
+				676D6E992C3C7E6400BF1BD2 /* Sources */,
+				676D6E9A2C3C7E6400BF1BD2 /* Frameworks */,
+				676D6E9B2C3C7E6400BF1BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = easylondon;
+			productName = easylondon;
+			productReference = 676D6E9D2C3C7E6400BF1BD2 /* easylondon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		676D6EAC2C3C7E6600BF1BD2 /* easylondonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676D6EC42C3C7E6600BF1BD2 /* Build configuration list for PBXNativeTarget "easylondonTests" */;
+			buildPhases = (
+				676D6EA92C3C7E6600BF1BD2 /* Sources */,
+				676D6EAA2C3C7E6600BF1BD2 /* Frameworks */,
+				676D6EAB2C3C7E6600BF1BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				676D6EAF2C3C7E6600BF1BD2 /* PBXTargetDependency */,
+			);
+			name = easylondonTests;
+			productName = easylondonTests;
+			productReference = 676D6EAD2C3C7E6600BF1BD2 /* easylondonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		676D6EB62C3C7E6600BF1BD2 /* easylondonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676D6EC72C3C7E6600BF1BD2 /* Build configuration list for PBXNativeTarget "easylondonUITests" */;
+			buildPhases = (
+				676D6EB32C3C7E6600BF1BD2 /* Sources */,
+				676D6EB42C3C7E6600BF1BD2 /* Frameworks */,
+				676D6EB52C3C7E6600BF1BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				676D6EB92C3C7E6600BF1BD2 /* PBXTargetDependency */,
+			);
+			name = easylondonUITests;
+			productName = easylondonUITests;
+			productReference = 676D6EB72C3C7E6600BF1BD2 /* easylondonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		676D6E952C3C7E6400BF1BD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					676D6E9C2C3C7E6400BF1BD2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					676D6EAC2C3C7E6600BF1BD2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 676D6E9C2C3C7E6400BF1BD2;
+					};
+					676D6EB62C3C7E6600BF1BD2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 676D6E9C2C3C7E6400BF1BD2;
+					};
+				};
+			};
+			buildConfigurationList = 676D6E982C3C7E6400BF1BD2 /* Build configuration list for PBXProject "easylondon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 676D6E942C3C7E6400BF1BD2;
+			productRefGroup = 676D6E9E2C3C7E6400BF1BD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				676D6E9C2C3C7E6400BF1BD2 /* easylondon */,
+				676D6EAC2C3C7E6600BF1BD2 /* easylondonTests */,
+				676D6EB62C3C7E6600BF1BD2 /* easylondonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		676D6E9B2C3C7E6400BF1BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676D6EA82C3C7E6500BF1BD2 /* Preview Assets.xcassets in Resources */,
+				676D6EA52C3C7E6500BF1BD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676D6EAB2C3C7E6600BF1BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676D6EB52C3C7E6600BF1BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		676D6E992C3C7E6400BF1BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676D6EA32C3C7E6400BF1BD2 /* ContentView.swift in Sources */,
+				676D6EA12C3C7E6400BF1BD2 /* easylondonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676D6EA92C3C7E6600BF1BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676D6EB22C3C7E6600BF1BD2 /* easylondonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676D6EB32C3C7E6600BF1BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676D6EBE2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift in Sources */,
+				676D6EBC2C3C7E6600BF1BD2 /* easylondonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		676D6EAF2C3C7E6600BF1BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676D6E9C2C3C7E6400BF1BD2 /* easylondon */;
+			targetProxy = 676D6EAE2C3C7E6600BF1BD2 /* PBXContainerItemProxy */;
+		};
+		676D6EB92C3C7E6600BF1BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676D6E9C2C3C7E6400BF1BD2 /* easylondon */;
+			targetProxy = 676D6EB82C3C7E6600BF1BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		676D6EBF2C3C7E6600BF1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		676D6EC02C3C7E6600BF1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		676D6EC22C3C7E6600BF1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"easylondon/Preview Content\"";
+				DEVELOPMENT_TEAM = 42K2L2BRLJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dragonappslab.easylondon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		676D6EC32C3C7E6600BF1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"easylondon/Preview Content\"";
+				DEVELOPMENT_TEAM = 42K2L2BRLJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dragonappslab.easylondon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		676D6EC52C3C7E6600BF1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42K2L2BRLJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dragonappslab.easylondonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/easylondon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/easylondon";
+			};
+			name = Debug;
+		};
+		676D6EC62C3C7E6600BF1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42K2L2BRLJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dragonappslab.easylondonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/easylondon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/easylondon";
+			};
+			name = Release;
+		};
+		676D6EC82C3C7E6600BF1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42K2L2BRLJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dragonappslab.easylondonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = easylondon;
+			};
+			name = Debug;
+		};
+		676D6EC92C3C7E6600BF1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42K2L2BRLJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dragonappslab.easylondonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = easylondon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		676D6E982C3C7E6400BF1BD2 /* Build configuration list for PBXProject "easylondon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676D6EBF2C3C7E6600BF1BD2 /* Debug */,
+				676D6EC02C3C7E6600BF1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676D6EC12C3C7E6600BF1BD2 /* Build configuration list for PBXNativeTarget "easylondon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676D6EC22C3C7E6600BF1BD2 /* Debug */,
+				676D6EC32C3C7E6600BF1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676D6EC42C3C7E6600BF1BD2 /* Build configuration list for PBXNativeTarget "easylondonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676D6EC52C3C7E6600BF1BD2 /* Debug */,
+				676D6EC62C3C7E6600BF1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676D6EC72C3C7E6600BF1BD2 /* Build configuration list for PBXNativeTarget "easylondonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676D6EC82C3C7E6600BF1BD2 /* Debug */,
+				676D6EC92C3C7E6600BF1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 676D6E952C3C7E6400BF1BD2 /* Project object */;
+}
