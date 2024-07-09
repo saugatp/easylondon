@@ -14,6 +14,15 @@
 		676D6EB22C3C7E6600BF1BD2 /* easylondonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EB12C3C7E6600BF1BD2 /* easylondonTests.swift */; };
 		676D6EBC2C3C7E6600BF1BD2 /* easylondonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EBB2C3C7E6600BF1BD2 /* easylondonUITests.swift */; };
 		676D6EBE2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EBD2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift */; };
+		676D6ECB2C3C82B500BF1BD2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6ECA2C3C82B500BF1BD2 /* LocationManager.swift */; };
+		676D6ECD2C3C8CB000BF1BD2 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6ECC2C3C8CB000BF1BD2 /* StationsViewModel.swift */; };
+		676D6ED12C3C8E1F00BF1BD2 /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6ED02C3C8E1F00BF1BD2 /* StationData.swift */; };
+		676D6ED32C3C8FEA00BF1BD2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6ED22C3C8FEA00BF1BD2 /* ApiService.swift */; };
+		676D6ED72C3C93F800BF1BD2 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6ED62C3C93F800BF1BD2 /* StationListView.swift */; };
+		676D6ED92C3C97F900BF1BD2 /* StationApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6ED82C3C97F900BF1BD2 /* StationApiResponse.swift */; };
+		67746C182C3DDBD5004EFDC7 /* StationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */; };
+		67746C1A2C3DDEDB004EFDC7 /* ArrivalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67746C192C3DDEDB004EFDC7 /* ArrivalsData.swift */; };
+		67746C222C3DE208004EFDC7 /* ArrivalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67746C212C3DE208004EFDC7 /* ArrivalsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		676D6EB72C3C7E6600BF1BD2 /* easylondonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = easylondonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D6EBB2C3C7E6600BF1BD2 /* easylondonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonUITests.swift; sourceTree = "<group>"; };
 		676D6EBD2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		676D6ECA2C3C82B500BF1BD2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		676D6ECC2C3C8CB000BF1BD2 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		676D6ED02C3C8E1F00BF1BD2 /* StationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		676D6ED22C3C8FEA00BF1BD2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		676D6ED62C3C93F800BF1BD2 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
+		676D6ED82C3C97F900BF1BD2 /* StationApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationApiResponse.swift; sourceTree = "<group>"; };
+		67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsView.swift; sourceTree = "<group>"; };
+		67746C192C3DDEDB004EFDC7 /* ArrivalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalsData.swift; sourceTree = "<group>"; };
+		67746C212C3DE208004EFDC7 /* ArrivalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */,
-				676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */,
 				676D6EA42C3C7E6500BF1BD2 /* Assets.xcassets */,
 				676D6EA62C3C7E6500BF1BD2 /* Preview Content */,
+				67746C1C2C3DDF0B004EFDC7 /* Views */,
+				67746C1D2C3DDF21004EFDC7 /* Services */,
+				67746C1E2C3DDF29004EFDC7 /* ViewModels */,
+				67746C1B2C3DDEEF004EFDC7 /* Models */,
 			);
 			path = easylondon;
 			sourceTree = "<group>";
@@ -125,6 +146,44 @@
 				676D6EBD2C3C7E6600BF1BD2 /* easylondonUITestsLaunchTests.swift */,
 			);
 			path = easylondonUITests;
+			sourceTree = "<group>";
+		};
+		67746C1B2C3DDEEF004EFDC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				676D6ED02C3C8E1F00BF1BD2 /* StationData.swift */,
+				676D6ED82C3C97F900BF1BD2 /* StationApiResponse.swift */,
+				67746C192C3DDEDB004EFDC7 /* ArrivalsData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67746C1C2C3DDF0B004EFDC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */,
+				676D6ED62C3C93F800BF1BD2 /* StationListView.swift */,
+				67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67746C1D2C3DDF21004EFDC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				676D6ECA2C3C82B500BF1BD2 /* LocationManager.swift */,
+				676D6ED22C3C8FEA00BF1BD2 /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67746C1E2C3DDF29004EFDC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				676D6ECC2C3C8CB000BF1BD2 /* StationsViewModel.swift */,
+				67746C212C3DE208004EFDC7 /* ArrivalsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +318,15 @@
 			files = (
 				676D6EA32C3C7E6400BF1BD2 /* ContentView.swift in Sources */,
 				676D6EA12C3C7E6400BF1BD2 /* easylondonApp.swift in Sources */,
+				67746C182C3DDBD5004EFDC7 /* StationDetailsView.swift in Sources */,
+				676D6ED32C3C8FEA00BF1BD2 /* ApiService.swift in Sources */,
+				676D6ECB2C3C82B500BF1BD2 /* LocationManager.swift in Sources */,
+				676D6ED72C3C93F800BF1BD2 /* StationListView.swift in Sources */,
+				676D6ECD2C3C8CB000BF1BD2 /* StationsViewModel.swift in Sources */,
+				67746C1A2C3DDEDB004EFDC7 /* ArrivalsData.swift in Sources */,
+				676D6ED92C3C97F900BF1BD2 /* StationApiResponse.swift in Sources */,
+				67746C222C3DE208004EFDC7 /* ArrivalsViewModel.swift in Sources */,
+				676D6ED12C3C8E1F00BF1BD2 /* StationData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +493,7 @@
 				DEVELOPMENT_TEAM = 42K2L2BRLJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to use location to calculate trips and easy routes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +523,7 @@
 				DEVELOPMENT_TEAM = 42K2L2BRLJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to use location to calculate trips and easy routes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
