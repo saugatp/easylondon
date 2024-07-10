@@ -13,13 +13,16 @@ class ApiService{
     private var appId = "9d8d100bbcf64051b686781fc856a19c"
     private var appKey = "230ada1ab106487991b50c3bcc5531c6"
 
-    func fetchStations(location: CLLocation) async throws -> [StationData]{
+    func fetchStations(location: CLLocation, londonBusOnly:Bool, radius:Double) async throws -> [StationData]{
         
-        let urlString = "https://api.tfl.gov.uk/StopPoint?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&modes=bus&stoptypes=NaptanPublicBusCoachTram&radius=3000&app_id=\(appId)&app_key=\(appKey)"
+        let urlString = "https://api.tfl.gov.uk/StopPoint?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&\(londonBusOnly ? "modes=bus&": "")stoptypes=NaptanPublicBusCoachTram&radius=\(Int(radius*1000))&app_id=\(appId)&app_key=\(appKey)"
                 guard let url = URL(string: urlString) else {
                     throw URLError(.badURL)
                 }
-                let (data, _) = try await URLSession.shared.data(from: url)
+                let sessionConfig = URLSessionConfiguration.default
+                sessionConfig.timeoutIntervalForRequest = 30.0
+
+                let (data, _) = try await URLSession(configuration: sessionConfig).data(from: url)
         
                 let response = try JSONDecoder().decode(StationApiResponse.self, from: data)
                 return response.stopPoints

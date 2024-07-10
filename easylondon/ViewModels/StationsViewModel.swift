@@ -12,7 +12,11 @@ class StationsViewModel: ObservableObject{
     @Published var nearbyStations: [StationData] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
-    
+    @Published var isBusSelected: Bool = false
+    @Published var distanceFilter: Double = 0.2  // Default distance filter value
+    @Published var searchQuery: String = ""
+
+
     private let locationManager = LocationManager()
     private let apiService = ApiService()
     
@@ -26,7 +30,7 @@ class StationsViewModel: ObservableObject{
         isLoading = true
         if let location = locationManager.location{
             do {
-                nearbyStations = try await apiService.fetchStations(location: location)
+                nearbyStations = try await apiService.fetchStations(location: location, londonBusOnly: isBusSelected, radius: distanceFilter)
                 isLoading = false
             } catch {
                 errorMessage = "Failed to fetch items: \(error.localizedDescription)"
@@ -37,4 +41,11 @@ class StationsViewModel: ObservableObject{
             isLoading = false
         }
     }
+    var filteredStations: [StationData] {
+           if searchQuery.isEmpty {
+               return nearbyStations
+           } else {
+               return nearbyStations.filter { $0.commonName?.localizedCaseInsensitiveContains(searchQuery) == true }
+           }
+       }
 }

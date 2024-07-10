@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676C08382C3F307100A1096B /* FilterPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C08372C3F307100A1096B /* FilterPopView.swift */; };
 		676D6EA12C3C7E6400BF1BD2 /* easylondonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */; };
 		676D6EA32C3C7E6400BF1BD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */; };
 		676D6EA52C3C7E6500BF1BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D6EA42C3C7E6500BF1BD2 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		676C08372C3F307100A1096B /* FilterPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopView.swift; sourceTree = "<group>"; };
 		676D6E9D2C3C7E6400BF1BD2 /* easylondon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easylondon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonApp.swift; sourceTree = "<group>"; };
 		676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */,
 				676D6ED62C3C93F800BF1BD2 /* StationListView.swift */,
 				67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */,
+				676C08372C3F307100A1096B /* FilterPopView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				67746C1A2C3DDEDB004EFDC7 /* ArrivalsData.swift in Sources */,
 				676D6ED92C3C97F900BF1BD2 /* StationApiResponse.swift in Sources */,
 				67746C222C3DE208004EFDC7 /* ArrivalsViewModel.swift in Sources */,
+				676C08382C3F307100A1096B /* FilterPopView.swift in Sources */,
 				676D6ED12C3C8E1F00BF1BD2 /* StationData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

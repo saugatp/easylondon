@@ -13,4 +13,5 @@ struct StationData: Codable, Identifiable{
     let distance: Float?
     let indicator: String?
     let naptanId: String?
+    let modes: [String]?
 }
