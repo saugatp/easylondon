@@ -10,3 +10,7 @@ import Foundation
 struct StationApiResponse: Codable{
     let stopPoints: [StationData]
 }
+
+struct StationSearchApiResponse: Codable{
+    let matches: [StationData]
+}

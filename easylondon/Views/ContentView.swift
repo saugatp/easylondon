@@ -9,7 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        StationListView()
+        TabView {
+                    CommuteView()
+                        .tabItem {
+                            Label("Commute", systemImage: "tram")
+                        }
+
+                    StationListView()
+                        .tabItem {
+                            Label("Nearby", systemImage: "magnifyingglass")
+                        }
+
+                    SettingsView()
+                        .tabItem {
+                            Label("Settings", systemImage: "gear")
+                        }
+                }
+        
+    }
+}
+
+struct SettingsView: View {
+    var body: some View {
+        Text("Settings")
     }
 }
 

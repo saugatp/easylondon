@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ShowIconView: View {
+    let modes: [String]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        if modes.contains("national-rail") {
+            Image(systemName:"tram.fill").foregroundColor(.red)
+        } else if modes.contains("bus") {
+            Image(systemName:"bus.doubledecker.fill").foregroundColor(.red)
+        } else {
+            Image(systemName:"bus.fill").foregroundColor(.blue)
 
-#Preview {
-    ShowIconView()
+        }
+    }
 }

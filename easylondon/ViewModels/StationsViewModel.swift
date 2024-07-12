@@ -45,7 +45,12 @@ class StationsViewModel: ObservableObject{
            if searchQuery.isEmpty {
                return nearbyStations
            } else {
-               return nearbyStations.filter { $0.commonName?.localizedCaseInsensitiveContains(searchQuery) == true }
+              
+               return nearbyStations.filter { $0.commonName?.localizedCaseInsensitiveContains(searchQuery) == true || mergedString(from: $0.lines ?? []).localizedCaseInsensitiveContains(searchQuery) == true }
            }
+       }
+    
+    func mergedString(from list: [Lines]) -> String {
+            return list.map{$0.name ?? "" }.joined()
        }
 }

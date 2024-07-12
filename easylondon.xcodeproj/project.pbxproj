@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6722D4072C41D1DA00683DEA /* CommuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D4062C41D1DA00683DEA /* CommuteView.swift */; };
+		6722D4092C41DA1A00683DEA /* CommuteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D4082C41DA1A00683DEA /* CommuteViewModel.swift */; };
+		6722D40B2C41DAEB00683DEA /* StationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D40A2C41DAEB00683DEA /* StationSearchView.swift */; };
+		6722D40D2C41DB8100683DEA /* LocationSelectorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D40C2C41DB8100683DEA /* LocationSelectorButton.swift */; };
 		676C08382C3F307100A1096B /* FilterPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C08372C3F307100A1096B /* FilterPopView.swift */; };
 		676D6EA12C3C7E6400BF1BD2 /* easylondonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */; };
 		676D6EA32C3C7E6400BF1BD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D6EA22C3C7E6400BF1BD2 /* ContentView.swift */; };
@@ -24,6 +28,7 @@
 		67746C182C3DDBD5004EFDC7 /* StationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */; };
 		67746C1A2C3DDEDB004EFDC7 /* ArrivalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67746C192C3DDEDB004EFDC7 /* ArrivalsData.swift */; };
 		67746C222C3DE208004EFDC7 /* ArrivalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67746C212C3DE208004EFDC7 /* ArrivalsViewModel.swift */; };
+		67F772412C3FF1410099D00C /* ShowIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F772402C3FF1410099D00C /* ShowIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6722D4062C41D1DA00683DEA /* CommuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuteView.swift; sourceTree = "<group>"; };
+		6722D4082C41DA1A00683DEA /* CommuteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuteViewModel.swift; sourceTree = "<group>"; };
+		6722D40A2C41DAEB00683DEA /* StationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchView.swift; sourceTree = "<group>"; };
+		6722D40C2C41DB8100683DEA /* LocationSelectorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorButton.swift; sourceTree = "<group>"; };
 		676C08372C3F307100A1096B /* FilterPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopView.swift; sourceTree = "<group>"; };
 		676D6E9D2C3C7E6400BF1BD2 /* easylondon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easylondon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D6EA02C3C7E6400BF1BD2 /* easylondonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easylondonApp.swift; sourceTree = "<group>"; };
@@ -64,6 +73,7 @@
 		67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsView.swift; sourceTree = "<group>"; };
 		67746C192C3DDEDB004EFDC7 /* ArrivalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalsData.swift; sourceTree = "<group>"; };
 		67746C212C3DE208004EFDC7 /* ArrivalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalsViewModel.swift; sourceTree = "<group>"; };
+		67F772402C3FF1410099D00C /* ShowIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,10 @@
 				676D6ED62C3C93F800BF1BD2 /* StationListView.swift */,
 				67746C172C3DDBD5004EFDC7 /* StationDetailsView.swift */,
 				676C08372C3F307100A1096B /* FilterPopView.swift */,
+				67F772402C3FF1410099D00C /* ShowIconView.swift */,
+				6722D4062C41D1DA00683DEA /* CommuteView.swift */,
+				6722D40A2C41DAEB00683DEA /* StationSearchView.swift */,
+				6722D40C2C41DB8100683DEA /* LocationSelectorButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +199,7 @@
 			children = (
 				676D6ECC2C3C8CB000BF1BD2 /* StationsViewModel.swift */,
 				67746C212C3DE208004EFDC7 /* ArrivalsViewModel.swift */,
+				6722D4082C41DA1A00683DEA /* CommuteViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -321,14 +336,19 @@
 			files = (
 				676D6EA32C3C7E6400BF1BD2 /* ContentView.swift in Sources */,
 				676D6EA12C3C7E6400BF1BD2 /* easylondonApp.swift in Sources */,
+				6722D40D2C41DB8100683DEA /* LocationSelectorButton.swift in Sources */,
 				67746C182C3DDBD5004EFDC7 /* StationDetailsView.swift in Sources */,
 				676D6ED32C3C8FEA00BF1BD2 /* ApiService.swift in Sources */,
 				676D6ECB2C3C82B500BF1BD2 /* LocationManager.swift in Sources */,
+				6722D40B2C41DAEB00683DEA /* StationSearchView.swift in Sources */,
 				676D6ED72C3C93F800BF1BD2 /* StationListView.swift in Sources */,
+				6722D4092C41DA1A00683DEA /* CommuteViewModel.swift in Sources */,
 				676D6ECD2C3C8CB000BF1BD2 /* StationsViewModel.swift in Sources */,
 				67746C1A2C3DDEDB004EFDC7 /* ArrivalsData.swift in Sources */,
+				67F772412C3FF1410099D00C /* ShowIconView.swift in Sources */,
 				676D6ED92C3C97F900BF1BD2 /* StationApiResponse.swift in Sources */,
 				67746C222C3DE208004EFDC7 /* ArrivalsViewModel.swift in Sources */,
+				6722D4072C41D1DA00683DEA /* CommuteView.swift in Sources */,
 				676C08382C3F307100A1096B /* FilterPopView.swift in Sources */,
 				676D6ED12C3C8E1F00BF1BD2 /* StationData.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import Combine
 
 class ApiService{
     
@@ -15,7 +16,7 @@ class ApiService{
 
     func fetchStations(location: CLLocation, londonBusOnly:Bool, radius:Double) async throws -> [StationData]{
         
-        let urlString = "https://api.tfl.gov.uk/StopPoint?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&\(londonBusOnly ? "modes=bus&": "")stoptypes=NaptanPublicBusCoachTram&radius=\(Int(radius*1000))&app_id=\(appId)&app_key=\(appKey)"
+        let urlString = "https://api.tfl.gov.uk/StopPoint?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&\(londonBusOnly ? "modes=bus&": "")stoptypes=NaptanMetroStation,NaptanRailStation,NaptanPublicBusCoachTram&radius=\(Int(radius*1000))&app_id=\(appId)&app_key=\(appKey)"
                 guard let url = URL(string: urlString) else {
                     throw URLError(.badURL)
                 }
@@ -39,5 +40,24 @@ class ApiService{
         return response
         
     }
+    func searchStation(query: String) async throws -> [StationData] {
+            let urlString = "https://api.tfl.gov.uk/StopPoint/Search?query=\(query)&app_id=\(appId)&app_key=\(appKey)"
+            guard let url = URL(string: urlString) else {
+                throw URLError(.badURL)
+            }
+            
+            let sessionConfig = URLSessionConfiguration.default
+            sessionConfig.timeoutIntervalForRequest = 30.0
+            
+            let (data, response) = try await URLSession(configuration: sessionConfig).data(from: url)
+            
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                throw URLError(.badServerResponse)
+            }
+            
+            let decodedResponse = try JSONDecoder().decode(StationSearchApiResponse.self, from: data)
+            return decodedResponse.matches
+        }
+    
 }
  

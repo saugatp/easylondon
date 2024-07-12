@@ -24,9 +24,10 @@ struct StationDetailsView: View {
                 List{
                     ForEach(arrivals){ arrival in
                         HStack{
-                            Text("\(arrival.lineId!) to \(arrival.destinationName ?? "nil")")
+                            Image(systemName:"bus.doubledecker.fill").foregroundColor(.red)
+                            Text("\(arrival.lineId!) to \(arrival.destinationName ?? "nil")").font(.caption)
                             Spacer()
-                            Text("\((arrival.timeToStation ?? 0) / 60) Minutes").foregroundStyle(.gray)
+                            Text("\((arrival.timeToStation ?? 0) / 60) Minutes").foregroundStyle(.gray).font(.caption2)
                         }
                     }
                 }

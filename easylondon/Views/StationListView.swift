@@ -24,22 +24,24 @@ struct StationListView: View {
                 else{
                     List{
                         ForEach(stations){ station in
-
+                            let lines = mergedString(from: station.lines ?? [])
                             NavigationLink{
                                 StationDetailsView(stationId: station.naptanId ?? station.id)
                             } label: {
-                                HStack{
-                                    Image(systemName: station.modes!.contains("bus") ? "bus.doubledecker.fill": "bus.fill").foregroundColor(
-                                        station.modes!.contains("bus") ? .red : .blue)
-                                    Text("\(station.commonName!)")
+                                HStack(alignment: .center ){
+                                    VStack(alignment: .leading){
+                                        Text("\(station.commonName!)")
+                                        HStack(alignment: .center){
+                                            Text("Lines: \(lines)").font(.caption2).foregroundStyle(.gray)
+                                            
+                                        }
+                                    }
                                     Spacer()
-                                    Text("\(String(format: "%.2f", (station.distance ?? 0.0)/1000)) KM").foregroundStyle(.gray)
+                                    Text("\(String(format: "%.2f", (station.distance ?? 0.0)/1000)) KM").foregroundStyle(.gray).font(.caption)
                                 }
                             }
                         }
                     }.searchable(text: $stationsViewmodel.searchQuery)
-                    
-                    
                 }
             }.navigationTitle("Nearby Stations")
                 .toolbar {
@@ -85,7 +87,15 @@ struct StationListView: View {
         }
     }
 }
-
+func mergedString(from list: [Lines]) -> String {
+    if(list.count>3){
+        let startIndex = max(0, list.count - 2)
+        let lastTwoObjects = Array(list[startIndex..<list.count])
+        return lastTwoObjects.map{$0.name ?? "" }.joined(separator: ",")
+    }else{
+        return list.map{$0.name ?? "" }.joined(separator: ",")
+    }
+   }
 #Preview {
     StationListView()
 }
